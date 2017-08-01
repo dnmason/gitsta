@@ -1,4 +1,5 @@
 <?php
+
 require_once 'inc/BootstrapNavMenuWalker.php';
 require_once 'inc/Comments.php';
 
@@ -92,7 +93,8 @@ add_action('after_setup_theme', function() {
     */
 	add_filter( 'default_content', 'my_editor_content' );
 	function my_editor_content( $content ) {
-	$content = "<h3>Aim</h3><p>Why were you doing this experiment?</p><br><h3>Methods</h3><p>What did you do?</p><br><h3>Results</h3><p>What happened?</p><br><h3>Thoughts</h3><p>What does it mean?</p>";
+	/*$content = "<h3>Aim</h3><p>Why were you doing this experiment?</p><br><h3>Methods</h3><p>What did you do?</p><br><h3>Results</h3><p>What happened?</p><br><h3>Thoughts</h3><p>What does it mean?</p>";*/
+	$content = "";
 	return $content;
 	}
     // CSS Style for reply link
