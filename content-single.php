@@ -2,8 +2,10 @@
     <div name="meta">
         <p class="text-muted">
             <i class="fa fa-calendar"></i> <?php echo the_date(); ?>
+            <i class="fa fa-user" style="margin-left: 20px;"></i> <?php echo get_the_author(', '); ?><br>
 
-            <i class="fa fa-folder-open" style="margin-left: 20px;"></i> 
+
+            <i class="fa fa-folder-open" style="margin-top: 20px;"></i> 
             <?php
             echo get_the_category_list(', ');
             ?>
