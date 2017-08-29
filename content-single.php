@@ -28,4 +28,7 @@
         the_content();
         ?>
     </div>
+<span class="pull-right">
+<?php edit_post_link('<i class="fa fa-edit"></i> ' . __('Edit', 'gitsta')); ?>
+</span>
 </div>
