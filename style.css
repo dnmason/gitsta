@@ -47,6 +47,7 @@ div.item        { margin-bottom: 50px; }
 | Typography
 |----------------------------------------------------------
 */
+
 .post-content h2 {
     font-size: 20px;
     border-bottom: 1px solid #eee;
@@ -56,6 +57,12 @@ div.item        { margin-bottom: 50px; }
     font-size: 19px;
 }
 
+/* Add 100% width subtle highlighting to match widget menu for h1 and h2 */
+.post-content h1, .post-content h2 {
+border-left: 3px solid #563d7c;
+background-color: #eee;
+padding:10px;
+}
 /*
 |----------------------------------------------------------
 | Code
