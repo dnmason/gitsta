@@ -22,10 +22,6 @@
             <?php
             echo get_the_category_list(', ');
             ?>
-
-            <?php
-            echo get_the_tag_list('<i class="fa fa-tags" style="margin-left: 20px;"></i> ',', ');
-            ?>
         </p>
     </div>
 </div>

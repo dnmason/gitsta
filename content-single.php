@@ -18,6 +18,7 @@
                  <?php edit_post_link('<i class="fa fa-edit"></i> ' . __('Edit', 'gitsta')); ?> 
             </span>
         </p>
+<hr>
     </div>
     <div class="post-content">
         <?php
