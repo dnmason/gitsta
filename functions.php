@@ -269,6 +269,25 @@ add_action('after_setup_theme', function() {
     }
 });
 
+
+function hide_publishing_actions(){
+        $my_post_type = 'post';
+        global $post;
+        if($post->post_type == $my_post_type){
+            echo '
+                <style type="text/css">
+                #visibility,
+		.misc-pub-post-status {
+                        display:none;
+                    }
+                </style>
+            ';
+        }
+}
+add_action('admin_head-post.php', 'hide_publishing_actions');
+add_action('admin_head-post-new.php', 'hide_publishing_actions');
+
+
 /*
 Remove Howdy
 */
@@ -297,4 +316,3 @@ $wp_admin_bar->add_menu( array(
 
 }
 }
-
