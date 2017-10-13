@@ -11,7 +11,7 @@
         <?php
         endif;
         ?>
-
+        <link rel="icon" href="<?php echo get_stylesheet_directory_uri(); ?>/fav.png" type="image/png" />
         <?php
         if(is_singular() && get_option('thread_comments')) {
             wp_enqueue_script('comment-reply');
