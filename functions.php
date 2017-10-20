@@ -79,7 +79,7 @@ add_action('after_setup_theme', function() {
     if(function_exists('register_sidebar')) {
         add_action('widgets_init', function() {
             register_sidebar(array(
-                'before_widget' => '<div id="%1$s" class="widget hidden-xs">',
+                'before_widget' => '<div id="%1$s" class="widget hidden-xs hidden-sm">',
                 'after_widget'  => '</div>'
             ));
         });
