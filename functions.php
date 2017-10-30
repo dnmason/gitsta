@@ -317,3 +317,22 @@ $wp_admin_bar->add_menu( array(
 
 }
 }
+
+/*
+|----------------------------------------------------------
+| Remove comment editing on authors own post (can still edit own comments)
+|----------------------------------------------------------
+*/
+
+// http://scribu.net/wordpress/prevent-blog-authors-from-editing-comments.html
+function restrict_comment_editing( $caps, $cap, $user_id, $args ) {
+	if ( 'edit_comment' == $cap ) {
+		$comment = get_comment( $args[0] );
+  
+		if ( $comment->user_id != $user_id )
+			$caps[] = 'moderate_comments';
+	}
+  
+	return $caps;
+}
+add_filter( 'map_meta_cap', 'restrict_comment_editing', 10, 4 );
