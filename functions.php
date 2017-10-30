@@ -277,7 +277,8 @@ function hide_publishing_actions(){
             echo '
                 <style type="text/css">
                 #visibility,
-		.misc-pub-post-status {
+		.misc-pub-post-status,
+		#postimagediv {
                         display:none;
                     }
                 </style>
