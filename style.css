@@ -419,3 +419,14 @@ h2.widgettitle {
 .rqa .rqa-answer:first-letter {
     font-weight: bold;
 }
+
+/*
+|----------------------------------------------------------
+| Comments - remove bullets on subcomments
+|----------------------------------------------------------
+*/
+
+li.comment {
+list-style: none;
+}
+
