@@ -44,18 +44,25 @@ div.item        { margin-bottom: 50px; }
 
 /*
 |----------------------------------------------------------
-| Typography
+| Typography (regular text is 14pt)
 |----------------------------------------------------------
 */
 
-.post-content h2 {
+.post-content h1 {
     font-size: 20px;
-    border-bottom: 1px solid #eee;
-    padding-bottom: 5px;
 }
+.post-content h2 {
+    font-size: 18px;
+}
+
 .post-content h3 {
-    font-size: 19px;
+    font-size: 18px;
 }
+
+.post-content h4 {
+    font-size: 16px;
+}
+
 
 /* Add 100% width subtle highlighting to match widget menu for h1 and h2 */
 .post-content h1, .post-content h2 {
