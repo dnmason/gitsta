@@ -336,3 +336,18 @@ function restrict_comment_editing( $caps, $cap, $user_id, $args ) {
 	return $caps;
 }
 add_filter( 'map_meta_cap', 'restrict_comment_editing', 10, 4 );
+
+/*
+|----------------------------------------------------------
+| Use a comment date stamp not 'x days ago'
+|----------------------------------------------------------
+*/
+
+// https://wpsites.net/wordpress-admin/change-comment-date-format-using-get_comment_date-filter/
+
+//add_filter( 'get_comment_date', 'wpsites_change_comment_date_format' );	
+//function wpsites_change_comment_date_format( $d ) {
+//    $d = date("y-m-d");	
+//    return $d;
+//} 
+
