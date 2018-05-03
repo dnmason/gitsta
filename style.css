@@ -317,7 +317,7 @@ h2.widgettitle {
     padding: 4px 20px;
     font-size: 13px;
     font-weight: 500;
-    color: #999;
+    color: #555;
     border-radius: 0;
     border-left: 1px solid #563d7c;
     margin-bottom: 2px;
@@ -331,13 +331,13 @@ h2.widgettitle {
     padding: 4px 20px;
     font-size: 13px;
     font-weight: 500;
-    color: #000;
+    color: #999;
     border: 0;
     margin-bottom: 2px;
 }
 .widget > ul > li.recentcomments > a:hover {
     border: 0;
-    text-decoration: underline;
+    /*text-decoration: underline;*/
 }
 .widget table#wp-calendar {
     width: 100%;
