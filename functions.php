@@ -351,3 +351,20 @@ add_filter( 'map_meta_cap', 'restrict_comment_editing', 10, 4 );
 //    return $d;
 //} 
 
+/*
+|----------------------------------------------------------
+| Add custom shortcodes for inline style tweaks
+|----------------------------------------------------------
+*/
+
+// https://www.problogdesign.com/wordpress/working-with-wordpress-shortcodes/
+
+function shortcode_DM_conf() {
+   return '<span style="text-align:center;color: red; font-family: courier,sans serif;margin:10px auto;padding:5px;background:#ffe187;font-size:105%;">[CONFIDENTIAL!] The contents of this post should not be shared beyond CCI staff.</span>';
+}
+add_shortcode('conf', 'shortcode_DM_conf');
+
+function shortcode_DM_ijmenu( $atts, $content = null ) {
+   return '<span style="font-family: courier,sans serif;color:#0046ff;">' . $content . '</span>';
+}
+add_shortcode('ijmenu', 'shortcode_DM_ijmenu');
