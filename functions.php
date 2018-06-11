@@ -368,3 +368,19 @@ function shortcode_DM_ijmenu( $atts, $content = null ) {
    return '<span style="font-family: courier,sans serif;color:#0046ff;">' . $content . '</span>';
 }
 add_shortcode('ijmenu', 'shortcode_DM_ijmenu');
+
+/*
+|----------------------------------------------------------
+| Enable core visual editor buttons that are disabled by default
+|----------------------------------------------------------
+*/
+
+
+function my_mce_buttons_2( $buttons ) {	
+
+	$buttons[] = 'superscript';
+	$buttons[] = 'subscript';
+
+	return $buttons;
+}
+add_filter( 'mce_buttons_2', 'my_mce_buttons_2' );
